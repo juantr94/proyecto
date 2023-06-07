@@ -17,13 +17,10 @@
     font-size: 16px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 25%);
     border: none;
-    padding: 30px 0;
+    padding: 30px 20px;
     outline-color: #6278F7;
     margin: 6px 0;
     box-sizing: border-box;
   
 }
 
-.text_field ::placeholder{
-    padding-left: 20px; 
-}

@@ -1,0 +1,15 @@
+.team_section{
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 32px;
+}
+
+.team_section h3{
+    display: inline;
+    font-size: 32px;
+    font-weight: 400;
+    padding-bottom: 12px;
+    border-bottom: 4px solid;
+}
+
