@@ -4,7 +4,7 @@ import OptionList from '../OptionList/OptionList';
 import Button from '../Button/Button';
 import { useState } from 'react';
 
-function Forms(){
+function Forms(props){
 
     const eventHandler = (event) => {
         event.preventDefault();
@@ -45,6 +45,7 @@ function Forms(){
                     />
                     <OptionList val={userteam}
                                 updateValue={setUserteam}
+                                teams={props.teams}
                     />
                     <Button text='Crear' />                    
                 </form>

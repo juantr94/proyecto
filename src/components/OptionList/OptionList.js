@@ -6,19 +6,12 @@ function OptionList(props){
       props.updateValue(e.target.value);
     }
 
-    const teams=[
-        "Programación",
-        "Frontend",
-        "UX y Diseño",
-        "Data Science",
-        "DevOps"
-    ]
 
     return <section className={styles.option_list}>
             <label>Especialidad</label>
                 <select value={props.val} onChange={valueChange} >
                   <option value="" disabled defaultValue="" hidden>Selecciona un equipo</option>
-                  {teams.map((team, index)=> <option key={index} >{team}</option>)}        
+                  {props.teams.map((equip, index) => <option key={index} >{equip}</option>)}        
                 </select>
            </section>
 }

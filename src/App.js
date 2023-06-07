@@ -33,8 +33,11 @@ function App() {
       title: "UX y Diseño",
       primaryColor: "#DB6EBF",
       secondaryColor: "#FAE9F5"
-    }
+    }  
 ]
+
+  const teams= teamsArray.map((equip)=> equip.title );
+
   const [displayForms, setDisplay]=useState(false);
 
   const switchDisplay = () => {
@@ -43,11 +46,11 @@ function App() {
   return (
     <div>
         <Header/>   
-        {displayForms ? <Forms/> : <></> };
+        {displayForms ? <Forms teams={teams} /> : <></> };
 
         <MiOrg switchDisplay={switchDisplay} />
 
-        { teamsArray.map( (teams)=> <Team dat={teams} ></Team>) }             
+        { teamsArray.map( (team, index)=> <Team dat={team} key={index}></Team>) }             
         
     </div>
   );
